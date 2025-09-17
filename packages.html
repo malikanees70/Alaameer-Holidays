@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Kashmir Packages — Kashmir Trails</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e3a2f">
+    <meta name="description" content="Kashmir travel agency offering curated tours to Srinagar, Gulmarg, Pahalgam, Sonamarg and beyond. Handcrafted itineraries, hotels, houseboats, and local experiences." />
+    <meta name="keywords" content="Kashmir, Srinagar, Gulmarg, Pahalgam, Sonamarg, Ladakh, houseboat, shikara, travel agency, tour packages" />
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+
+  </head>
+  <body>
+    
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Kashmir Trails home">
+    <img src="assets/logo.svg" alt="Kashmir Trails logo">
+    <span>Kashmir Trails</span>
+  </a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+  <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a class="cta" href="booking.html">Book Now</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+    <main class="container">
+      <header class="page-header">
+        <h1>Handcrafted Kashmir Packages</h1>
+        <p>Customizable itineraries for families, couples, and small groups. Prices include stays, breakfast, private transport & local support.</p>
+      </header>
+
+      <div class="filters" role="region" aria-label="Package filters">
+        <label>
+          <span class="visually-hidden">Filter by duration</span>
+          <select id="duration-filter">
+            <option value="all">All durations</option>
+            <option value="short">3–4 nights</option>
+            <option value="medium">5–6 nights</option>
+            <option value="long">7+ nights</option>
+          </select>
+        </label>
+        <label>
+          <span class="visually-hidden">Filter by season</span>
+          <select id="season-filter">
+            <option value="any">Any season</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="autumn">Autumn</option>
+            <option value="winter">Winter</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="packages-grid" class="grid-3"></div>
+    </main>
+    
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h4>About</h4>
+      <p>We are a boutique Kashmir travel agency crafting small-group and private trips across the Valley—houseboats, shikara rides, alpine meadows, and winter snow adventures.</p>
+    </div>
+    <div>
+      <h4>Contacts</h4>
+      <ul class="unstyled">
+        <li>📞 +91-7000-123-456</li>
+        <li>✉️ hello@kashmirtrails.example</li>
+        <li>🕘 Mon–Sat 9:00–18:00 IST</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <p>Boulevard Rd, Dal Lake,<br>Srinagar, J&K 190001</p>
+      <p>
+        <a target="_blank" rel="noopener" href="https://maps.google.com/?q=Dal+Lake+Srinagar">Open in Maps →</a>
+      </p>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <form action="https://formspree.io/f/mwkzqbze" method="POST">
+        <label class="visually-hidden" for="nl-email">Email</label>
+        <input id="nl-email" type="email" name="email" placeholder="Your email" required>
+        <button class="btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="tiny">© <span id="year"></span> Kashmir Trails. All rights reserved. • <a href="privacy.html">Privacy</a></div>
+</footer>
+
+    <script>
+      const PACKAGES = [
+        { id: 'houseboat-escape', title: 'Srinagar Houseboat Escape — 3N/4D', duration: 4, season: ['spring','summer','autumn'], price: 18900, img: 'https://images.unsplash.com/photo-1616576683713-860a80d05b67?q=80&w=1200&auto=format&fit=crop', summary: 'Cedar houseboat stay, shikara sunset, Mughal gardens, old city walk.' },
+        { id: 'gulmarg-snow', title: 'Gulmarg Snow & Gondola — 4N/5D', duration: 5, season: ['winter'], price: 27500, img: 'https://images.unsplash.com/photo-1552022605-c92c2f95e9b4?q=80&w=1200&auto=format&fit=crop', summary: 'Gondola ride, ski lesson, pine walks, Afarwat viewpoints.' },
+        { id: 'pahalgam-betaab', title: 'Pahalgam & Betaab Valley — 5N/6D', duration: 6, season: ['spring','summer','autumn'], price: 34800, img: 'https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=1200&auto=format&fit=crop', summary: 'Aru & Betaab meadows, Lidder riverside, pony trails.' },
+        { id: 'grand-kashmir', title: 'Grand Kashmir Circuit — 7N/8D', duration: 8, season: ['summer','autumn'], price: 52900, img: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop', summary: 'Srinagar, Gulmarg, Pahalgam & Sonamarg with free day to explore.' },
+        { id: 'tulip-bloom', title: 'Tulip Festival Special — 3N/4D', duration: 4, season: ['spring'], price: 21400, img: 'https://images.unsplash.com/photo-1446071103084-c257b5f70672?q=80&w=1200&auto=format&fit=crop', summary: 'Asia’s largest tulip garden + city highlights and shikara.' },
+        { id: 'gurez-frontier', title: 'Gurez Frontier Trails — 6N/7D', duration: 7, season: ['summer'], price: 45800, img: 'https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=1200&auto=format&fit=crop', summary: 'Offbeat valleys, Habba Khatoon peak, village stays.' }
+      ];
+
+      function durationBucket(n) { if (n <= 4) return 'short'; if (n <= 6) return 'medium'; return 'long'; }
+
+      function render() { 
+        const d = document.getElementById('duration-filter').value;
+        const s = document.getElementById('season-filter').value;
+        const root = document.getElementById('packages-grid');
+        root.innerHTML = '';
+        PACKAGES
+          .filter(p => (d==='all' || durationBucket(p.duration)===d))
+          .filter(p => (s==='any' || p.season.includes(s)))
+          .forEach(p => {
+            const el = document.createElement('article');
+            el.className = 'pkg';
+            el.innerHTML = `
+              <img src="${p.img}" alt="">
+              <div class="pkg-body">
+                <h3>${p.title}</h3>
+                <p>${p.summary}</p>
+                <div class="pkg-meta"><span>₹${p.price.toLocaleString('en-IN')}</span> per person</div>
+                <div class="pkg-actions">
+                  <a class="btn btn-small" href="booking.html?pkg=${p.id}">Book</a>
+                  <a class="btn btn-small btn-link" href="contact.html?interest=${p.id}">Ask a question</a>
+                </div>
+              </div>`;
+            root.appendChild(el);
+          });
+      }
+      document.getElementById('duration-filter').addEventListener('change', render);
+      document.getElementById('season-filter').addEventListener('change', render);
+      render();
+    </script>
+  </body>
+</html>
