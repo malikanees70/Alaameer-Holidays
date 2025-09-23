@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Travel Kashmir</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">TravelKashmir</a></h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <p>Use the form below to send a message — this demo form does not send emails. Replace with your backend or Netlify Forms / Formspree integration.</p>
+    <form id="contact-form">
+      <label>Name<input name="name" required></label>
+      <label>Email<input name="email" type="email" required></label>
+      <label>Message<textarea name="message" rows="5"></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+
+    <h3>Other ways to reach us</h3>
+    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+    <p>Phone: +91 98765 43210</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 TravelKashmir — Demo content.</div>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('This is a demo form. Hook it up to a backend or form service to collect submissions.');
+    });
+  </script>
+</body>
+</html>
