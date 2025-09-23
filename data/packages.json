@@ -1,0 +1,158 @@
+{
+  "packages": [
+    {
+      "id": "pkg1",
+      "title": "Srinagar Weekend Escape",
+      "short": "2 nights | Houseboat stay on Dal Lake, Shikara ride, Mughal gardens.",
+      "price": "\u20b97,499",
+      "days": 2,
+      "image": "assets/srinagar.svg",
+      "itinerary": [
+        "Day 1: Arrive Srinagar, houseboat & shikara",
+        "Day 2: Mughal Gardens, local markets, depart"
+      ]
+    },
+    {
+      "id": "pkg2",
+      "title": "Gulmarg Adventure Day",
+      "short": "1 day | Gondola ride to Apharwat Peak, meadow walks.",
+      "price": "\u20b94,299",
+      "days": 1,
+      "image": "assets/gulmarg.svg",
+      "itinerary": [
+        "Morning transfer to Gulmarg",
+        "Gondola ride & meadow hike",
+        "Return to Srinagar"
+      ]
+    },
+    {
+      "id": "pkg3",
+      "title": "Pahalgam Retreat",
+      "short": "3 days | Pine valley walks, Aru & Betaab Valley visit.",
+      "price": "\u20b99,299",
+      "days": 3,
+      "image": "assets/pahalgam.svg",
+      "itinerary": [
+        "Day 1: Transfer to Pahalgam",
+        "Day 2: Aru & Betaab Valley",
+        "Day 3: Sightseeing & return"
+      ]
+    },
+    {
+      "id": "pkg4",
+      "title": "Sonmarg Day Trip",
+      "short": "1 day | Glacial views, short hikes, river views.",
+      "price": "\u20b93,999",
+      "days": 1,
+      "image": "assets/sonmarg.svg",
+      "itinerary": [
+        "Full-day Sonmarg sightseeing",
+        "Optional short hike to Thajiwas Glacier"
+      ]
+    },
+    {
+      "id": "pkg5",
+      "title": "Kashmir Family Holiday",
+      "short": "5 days | Srinagar, Gulmarg, Pahalgam family-friendly itinerary.",
+      "price": "\u20b921,999",
+      "days": 5,
+      "image": "assets/family.svg",
+      "itinerary": [
+        "Srinagar houseboat",
+        "Gulmarg day",
+        "Pahalgam day",
+        "Local cultural experience"
+      ]
+    },
+    {
+      "id": "pkg6",
+      "title": "Romantic Srinagar Honeymoon",
+      "short": "3 days | Private houseboat & candlelight dinner, shikara.",
+      "price": "\u20b914,499",
+      "days": 3,
+      "image": "assets/honeymoon.svg",
+      "itinerary": [
+        "Private houseboat, shikara ride",
+        "Couple's spa & gondola (optional)",
+        "Mughal garden visit"
+      ]
+    },
+    {
+      "id": "pkg7",
+      "title": "Wildlife & Nature (Dachigam)",
+      "short": "2 days | Dachigam National Park, guided nature walks.",
+      "price": "\u20b98,999",
+      "days": 2,
+      "image": "assets/dachigam.svg",
+      "itinerary": [
+        "Dachigam safaris",
+        "Guided nature walk with local naturalist"
+      ]
+    },
+    {
+      "id": "pkg8",
+      "title": "Ladakh Gateway (Srinagar-Leh)",
+      "short": "7 days | Srinagar to Leh road trip, high-altitude views.",
+      "price": "\u20b949,999",
+      "days": 7,
+      "image": "assets/ladakh.svg",
+      "itinerary": [
+        "Srinagar to Sonmarg",
+        "Zojila pass crossing",
+        "Leh arrival & local tours"
+      ]
+    },
+    {
+      "id": "pkg9",
+      "title": "Photography Tour",
+      "short": "4 days | Sunrise/sunset locations, local guides for photographers.",
+      "price": "\u20b918,500",
+      "days": 4,
+      "image": "assets/photo.svg",
+      "itinerary": [
+        "Dal Lake sunrise",
+        "Gulmarg meadows at golden hour",
+        "Mountain panoramas"
+      ]
+    },
+    {
+      "id": "pkg10",
+      "title": "Trekking Intro (Kashmir)",
+      "short": "5 days | Moderate treks, expert guide, camping basics.",
+      "price": "\u20b924,999",
+      "days": 5,
+      "image": "assets/trek.svg",
+      "itinerary": [
+        "Day treks with guide",
+        "Overnight camping (optional)",
+        "Safety briefing & equipment"
+      ]
+    },
+    {
+      "id": "pkg11",
+      "title": "Culture & Cuisine Experience",
+      "short": "3 days | Local markets, cooking class, Kashmiri wazwan tasting.",
+      "price": "\u20b911,999",
+      "days": 3,
+      "image": "assets/cuisine.svg",
+      "itinerary": [
+        "Local market tour",
+        "Cooking class with traditional recipes",
+        "Dining experience"
+      ]
+    },
+    {
+      "id": "pkg12",
+      "title": "Off\u2011season Deals (Winter)",
+      "short": "4 days | Snow activities, Gulmarg skiing options, cozy houseboat stay.",
+      "price": "\u20b916,499",
+      "days": 4,
+      "image": "assets/winter.svg",
+      "itinerary": [
+        "Skiing/gondola",
+        "Houseboat with heater",
+        "Local winter markets"
+      ]
+    }
+  ]
+}
